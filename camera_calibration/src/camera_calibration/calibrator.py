@@ -723,6 +723,7 @@ class MonoCalibrator(Calibrator):
         if 'name' not in kwargs:
             kwargs['name'] = 'narrow_stereo/left'
         super(MonoCalibrator, self).__init__(*args, **kwargs)
+        #super().__init__(*args, **kwargs) 
 
     def cal(self, images):
         """
